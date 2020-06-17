@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:b="http://bootsfaces.net/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>StudyHome</title>
+	<script src="https://kit.fontawesome.com/fffbaac515.js"
+		crossorigin="anonymous"></script>
+	
+	
+	<style>
+  body {
+  margin: 0;
+}
+/* REDE SOCIAL NO HEADER */
+.header-principal ul{
+  position: relative;
+}
+.header-principal li .fa-facebook-square{
+  position: absolute;
+  right: 160px;
+  color: rgb(14, 14, 155);
+} 
+.header-principal li .fa-instagram-square{
+  position: absolute;
+  right: 110px;
+  color: black;
+}
+.header-principal li .fa-telegram-plane{
+  position: absolute;
+  right: 60px;
+  color: rgb(66, 66, 168);
+}
+.header-principal li .fa-github{
+  position: absolute;
+  right: 10px;
+  color: black;
+}
+header{
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: rgb(83, 82, 82);
+  padding: 20px 0px;
+}
+header a{
+  padding: 10px 20px;
+  border: solid 1px white;
+  text-decoration: unset;
+  margin: 0px 0px 0px 10px;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .container_botoes{
+  position: absolute;
+  top: 12px;
+  padding: 20px 0px;
+  right: 20px;
+}
+header h1{
+  margin: 0px 0px 0px 30px;
+  padding: 0;
+  color: white;
+}
+footer{
+  background-color: rgb(15, 1, 65);
+  padding-bottom: 3em;
+  text-align: center;
+}
+.redes-sociais ul{
+  list-style: none;
+  padding: 20px;
+  background-color: rgb(196, 182, 245);
+  margin: 0px auto;
+}
+.redes-sociais li{
+  margin: 0px 20px 0px;
+  display: inline-block;
+}
+.redes-sociais i{
+  font-size: 22px;
+}
+
+footer p{
+  margin: 10 0px 0px 0px;
+  color: white;
+}
+                 #geral{
+                        background-color: rgb(202, 202, 202);
+                        height: 900px;
+                    }
+                    .formulario{
+                        width: 800px;
+                        margin: 100px auto;
+                        border: solid 1px black;
+                    }
+                    form{
+                        padding: 2.8em;
+                    }
+                    form input{
+                        display: block;
+                        margin: 50px 0px;
+                        padding: 20px;
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+
+                </style>
+	
+</h:head>
+<h:body>
+		<div id="geral">
+        <header>
+        <h1>Study Home</h1>
+		
+		<h:form>
+        <div class="container_botoes">
+                <h:commandLink value="Cadastre-se" action="#{cadastroBean.acessarPaginaDeCadastro}" />
+        </div>
+        </h:form>
+        
+        </header>
+        <main>
+        <div class="formulario">
+            <h:form>
+                <h1 style="text-align: center;">Acesse sua conta</h1>
+                <h:inputText pt:placeholder="Email do usuário" id="email" label="Mail" value="#{loginBean.email}"
+                    required="true" />
+                <h:inputSecret pt:placeholder="Senha cadastrada" id="senha" label="senha" value="#{loginBean.senha}"
+                    required="true" />
+                <h:commandButton action="#{loginBean.login}" value="Login" />
+            </h:form>
+        </div>
+        </main>
+    </div>
+</h:body>
+</html>

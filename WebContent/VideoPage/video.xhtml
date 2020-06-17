@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui"
+	>
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>StudyHome</title>
+	<style>
+	body {
+  margin: 0;
+}
+/* REDE SOCIAL NO HEADER */
+.header-principal ul{
+  position: relative;
+}
+.header-principal li .fa-facebook-square{
+  position: absolute;
+  right: 160px;
+  color: rgb(14, 14, 155);
+} 
+.header-principal li .fa-instagram-square{
+  position: absolute;
+  right: 110px;
+  color: black;
+}
+.header-principal li .fa-telegram-plane{
+  position: absolute;
+  right: 60px;
+  color: rgb(66, 66, 168);
+}
+.header-principal li .fa-github{
+  position: absolute;
+  right: 10px;
+  color: black;
+}
+header{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    position: relative;
+}
+header img{
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+}
+footer{
+  background-color: rgb(15, 1, 65);
+  padding-bottom: 3em;
+  text-align: center;
+}
+.redes-sociais ul{
+  list-style: none;
+  padding: 20px;
+  background-color: rgb(196, 182, 245);
+  margin: 0px auto;
+}
+.redes-sociais li{
+  margin: 0px 20px 0px;
+  display: inline-block;
+}
+.redes-sociais i{
+  font-size: 22px;
+}
+
+footer p{
+  margin: 10 0px 0px 0px;
+  color: white;
+}
+/* main{
+    height: 500px;
+} */
+form {
+	width: 700px;
+	margin: 50px auto;
+}
+
+form h2 {
+	text-align: center;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+form input {
+	display: block;
+	padding: 20px 10px;
+	margin: 30px 0px;
+	width: 90%;
+}
+
+input[type="submit"] {
+	font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding: 10px 5px;
+	width: 30%;
+	margin: 0px auto;
+}
+
+input[type="radio"] {
+	display: inline-block;
+	margin: 10px 0px;
+	padding: 0;
+	width: 10%;
+}
+
+label {
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</h:head>
+<h:body>
+	
+	 <div id="geral">
+        <header>
+            <b:image name="noma" value="/imagem/nonddddddame.png"/>
+
+            <i class="fas fa-sign-in-alt"></i>
+        </header>
+
+        <main style="margin-top:20px">
+         <iframe src= "#{videoBean.video.linkvideo}" width="1365" height="480"></iframe>	
+        </main>
+    </div>
+</h:body>
+
+</html>

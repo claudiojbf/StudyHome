@@ -1,0 +1,142 @@
+
+
+/* geral */
+header h1{
+    margin: 0px 0px 0px 30px;
+    padding: 0;
+    color: white;
+}
+
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: rgb(83, 82, 82);
+    padding: 20px 0px;
+}
+header a{
+    padding: 10px 20px;
+    border: solid 1px white;
+    text-decoration: unset;
+    margin: 0px 0px 0px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .container_botoes{
+    position: absolute;
+    top: 12px;
+    padding: 20px 0px;
+    right: 20px;
+}
+.banner imagem{
+    width: 100%;
+}
+
+
+
+
+section{
+    padding: 4em;
+    text-align: center;
+}
+section h1{
+    color: black;
+    font-size: 22px;
+}
+section p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.quem_somos a{
+    color: white;
+    border-radius: 20px;
+    text-decoration: unset;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: solid 1px black;
+    padding: 1em 1em;
+    background-color: rgb(155, 1, 1);
+}
+
+.pai-ensino{
+    display: flex;
+}
+.filho-ensino{
+    border: solid 1px black;
+    width: 200px;
+    margin: 0px 20px 20px;
+    padding: 2em 50px;
+}
+.filho-ensino i{
+    border-bottom: solid 4px black;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.filho-ensino h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+.fiho-ensino-botao{
+    font-size: 16px;
+    text-decoration: unset;
+    color: black;
+    border: solid 1px black;
+    padding: 10px 30px;
+}
+
+
+
+.venha-fazer-parte{
+    background-image: url(../imagens/books-1845614__340.webp);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+.venha-fazer-parte h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.venha-fazer-parte p:nth-child(2){
+    width: 54%;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: normal;
+    padding: 50px 0px 30px 20px;
+    text-shadow: unset;
+}
+.venha-fazer-parte p:nth-child(3){
+    padding: 50px 0px 30px 20px;
+}
+.venha-fazer-parte p a{
+    text-decoration: unset;
+    border-bottom: dotted 2px blue;
+}
+
+
+
+footer{
+    background-color: rgb(15, 1, 65);
+    padding-bottom: 3em;
+    text-align: center;
+}
+.redes-sociais ul{
+    list-style: none;
+    padding: 20px;
+    background-color: rgb(196, 182, 245);
+    margin: 0px auto;
+}
+.redes-sociais li{
+    margin: 0px 20px 0px;
+    display: inline-block;
+}
+.redes-sociais i{
+    font-size: 22px;
+}
+
+footer p{
+    margin: 10 0px 0px 0px;
+    color: white;
+}

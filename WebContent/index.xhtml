@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>StudyHome</title>
+	<script src="https://kit.fontawesome.com/fffbaac515.js"
+		crossorigin="anonymous"></script>
+	<style>
+	body {
+  margin: 0;
+}
+/* REDE SOCIAL NO HEADER */
+.header-principal ul{
+  position: relative;
+}
+.header-principal li .fa-facebook-square{
+  position: absolute;
+  right: 160px;
+  color: rgb(14, 14, 155);
+} 
+.header-principal li .fa-instagram-square{
+  position: absolute;
+  right: 110px;
+  color: black;
+}
+.header-principal li .fa-telegram-plane{
+  position: absolute;
+  right: 60px;
+  color: rgb(66, 66, 168);
+}
+.header-principal li .fa-github{
+  position: absolute;
+  right: 10px;
+  color: black;
+}
+header{
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: rgb(83, 82, 82);
+  padding: 20px 0px;
+}
+header a{
+  padding: 10px 20px;
+  border: solid 1px white;
+  text-decoration: unset;
+  margin: 0px 0px 0px 10px;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .container_botoes{
+  position: absolute;
+  top: 12px;
+  padding: 20px 0px;
+  right: 20px;
+}
+header h1{
+  margin: 0px 0px 0px 30px;
+  padding: 0;
+  color: white;
+}
+footer{
+  background-color: rgb(15, 1, 65);
+  padding-bottom: 3em;
+  text-align: center;
+}
+.redes-sociais ul{
+  list-style: none;
+  padding: 20px;
+  background-color: rgb(196, 182, 245);
+  margin: 0px auto;
+}
+.redes-sociais li{
+  margin: 0px 20px 0px;
+  display: inline-block;
+}
+.redes-sociais i{
+  font-size: 22px;
+}
+
+footer p{
+  margin: 10 0px 0px 0px;
+  color: white;
+}
+		
+		/* geral */
+header h1 {
+	margin: 0px 0px 0px 30px;
+	padding: 0;
+	color: white;
+}
+
+header {
+	display: flex;
+	position: relative;
+	width: 100%;
+	background-color: rgb(83, 82, 82);
+	padding: 20px 0px;
+}
+
+header a {
+	padding: 10px 20px;
+	border: solid 1px white;
+	text-decoration: unset;
+	margin: 0px 0px 0px 10px;
+	color: white;
+	border-radius: 10px;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header .container_botoes {
+	position: absolute;
+	top: 12px;
+	padding: 20px 0px;
+	right: 20px;
+}
+
+.banner img {
+	width: 100%;
+}
+
+section {
+	padding: 4em;
+	text-align: center;
+}
+
+section h1 {
+	color: black;
+	font-size: 22px;
+}
+
+section p {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.quem_somos a {
+	color: white;
+	border-radius: 20px;
+	text-decoration: unset;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	border: solid 1px black;
+	padding: 1em 1em;
+	background-color: rgb(155, 1, 1);
+}
+
+.pai-ensino {
+	display: flex;
+}
+
+.filho-ensino {
+	border: solid 1px black;
+	width: 200px;
+	margin: 0px 20px 20px;
+	padding: 2em 50px;
+}
+
+.filho-ensino i {
+	border-bottom: solid 4px black;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.filho-ensino h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 50px;
+}
+
+.fiho-ensino-botao {
+	font-size: 16px;
+	text-decoration: unset;
+	color: black;
+	border: solid 1px black;
+	padding: 10px 30px;
+}
+
+.venha-fazer-parte {
+	background-image: url("books-1845614__340.webp");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: left;
+}
+
+.venha-fazer-parte h1 {
+	font-size: 40px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.venha-fazer-parte p:nth-child(2) {
+	width: 54%;
+	font-size: 33px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: normal;
+	padding: 50px 0px 30px 20px;
+	text-shadow: unset;
+}
+
+.venha-fazer-parte p:nth-child(3) {
+	padding: 50px 0px 30px 20px;
+}
+
+.venha-fazer-parte p a {
+	text-decoration: unset;
+	border-bottom: dotted 2px blue;
+}
+
+footer {
+	background-color: rgb(15, 1, 65);
+	padding-bottom: 3em;
+	text-align: center;
+}
+
+.redes-sociais ul {
+	list-style: none;
+	padding: 20px;
+	background-color: rgb(196, 182, 245);
+	margin: 0px auto;
+}
+
+.redes-sociais li {
+	margin: 0px 20px 0px;
+	display: inline-block;
+}
+
+.redes-sociais i {
+	font-size: 22px;
+}
+
+footer p {
+	margin: 10 0px 0px 0px;
+	color: white;
+}
+</style>
+</h:head>
+<h:body>
+	<div id="geral">
+		<header>
+		<h1>Study Home</h1>
+
+		<div class="container_botoes">
+			<h:form>
+				<h:commandLink value="Entrar" action="#{loginBean.realizarLogin}" />
+				<h:commandLink value="Realizar Cadastro"
+					action="#{cadastroBean.acessarPaginaDeCadastro}" />
+			</h:form>
+		</div>
+		</header>
+		<div class="banner">
+			<b:image name="HomePage" value="/imagem/computer-1185626__340.webp" />
+		</div>
+		<main> <section class="quem_somos">
+		<h1>O que é a Study Home ?</h1>
+		<p>A study Home é um sistema de ensino para alunos que desejam ter
+			professores das mais variadas formas de ensino, com metodologia
+			diferentes, que se encaixe com a que mais ele deseja. E para os
+			professores que desejam ter uma renda extra e ensinar milhares de
+			alunos.</p>
+
+		</section> <section>
+		<h1>O que nós Ensinamos</h1>
+		<p>Nosso foco de ensino são para alunos que irão prestar
+			vestibulares, provas militares e provas escolares. Possuímos matérias
+			escolares que são extremamente importante para a aprovação do aluno.</p>
+		<div class="pai-ensino" style="margin-left: 130px">
+			<div class="filho-ensino">
+				<i class="fas fa-landmark"></i>
+				<h3>História</h3>
+			</div>
+
+			<div class="filho-ensino">
+				<i class="fas fa-atlas"></i>
+				<h3>Geografia</h3>
+
+			</div>
+
+			<div class="filho-ensino">
+				<i class="fas fa-infinity"></i>
+				<h3>Matematica</h3>
+
+			</div>
+
+
+			<div class="filho-ensino">
+				<i class="fas fa-people-arrows"></i>
+				<h3>Sociologia</h3>
+			</div>
+		</div>
+
+		<div class="pai-ensino" style="margin-left: 130px">
+			<div class="filho-ensino">
+				<i class="fas fa-pen"></i>
+				<h3>Redação</h3>
+			</div>
+
+			<div class="filho-ensino">
+				<i class="fas fa-square-root-alt"></i>
+				<h3>Fisica</h3>
+			</div>
+
+			<div class="filho-ensino">
+				<i class="fas fa-square-root-alt"></i>
+				<h3>Cálculo</h3>
+			</div>
+
+			<div class="filho-ensino">
+				<i class="fas fa-pen"></i>
+				<h3>Português</h3>
+			</div>
+		</div>
+		</section>
+		
+		 <section class="venha-fazer-parte">
+		<h1>Study Home</h1>
+		<p>Venha estudar conosco, aqui você encontra os melhores
+			professores das matérias escolares, com diferenciadas formas
+			didáticas de ensino</p>
+		</section> 
+		</main>
+
+		<footer>
+		<div class="redes-sociais">
+			<ul>
+				<li><a class="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a class="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a class="#"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
+		<p>Projeto StudyHome</p>
+		</footer>
+	</div>
+</h:body>
+</html>

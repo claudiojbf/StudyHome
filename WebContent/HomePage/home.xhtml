@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://xmlns.jcp.org/jsf/html"
+		xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:b="http://bootsfaces.net/ui"
+		>
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>StudyHome</title>
+	<script src="https://kit.fontawesome.com/fffbaac515.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/normalize.css"/>
+    <style>
+    	body {
+  margin: 0;
+}
+/* REDE SOCIAL NO HEADER */
+.header-principal ul{
+  position: relative;
+}
+.header-principal li .fa-facebook-square{
+  position: absolute;
+  right: 160px;
+  color: rgb(14, 14, 155);
+} 
+.header-principal li .fa-instagram-square{
+  position: absolute;
+  right: 110px;
+  color: black;
+}
+.header-principal li .fa-telegram-plane{
+  position: absolute;
+  right: 60px;
+  color: rgb(66, 66, 168);
+}
+.header-principal li .fa-github{
+  position: absolute;
+  right: 10px;
+  color: black;
+}
+header{
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: rgb(83, 82, 82);
+  padding: 20px 0px;
+}
+header a{
+  padding: 10px 20px;
+  border: solid 1px trasparent;
+  text-decoration: unset;
+  margin: 0px 0px 0px 10px;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .container_botoes{
+  position: absolute;
+  top: 12px;
+  padding: 20px 0px;
+  right: 20px;
+}
+header h1{
+  margin: 0px 0px 0px 30px;
+  padding: 0;
+  color: white;
+}
+footer{
+  background-color: rgb(15, 1, 65);
+  padding-bottom: 3em;
+  text-align: center;
+}
+.redes-sociais ul{
+  list-style: none;
+  padding: 20px;
+  background-color: rgb(196, 182, 245);
+  margin: 0px auto;
+}
+.redes-sociais li{
+  margin: 0px 20px 0px;
+  display: inline-block;
+}
+.redes-sociais i{
+  font-size: 22px;
+}
+
+footer p{
+  margin: 10 0px 0px 0px;
+  color: white;
+}
+    	
+    	body, html{
+    height: 100%;
+}
+header{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    position: relative;
+}
+header img{
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+}
+header i{
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    color: gray;
+    font-size: 30px;
+}
+
+
+
+
+.painel-materias{
+    text-align: center;
+}
+.materias h2{
+    margin: 0px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.materias-dadas{
+    display: flex;
+    margin: 40px auto;
+    width: 1100px;
+}
+.materia{
+    width: 25%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px black;
+    margin: 10px 25px;
+    padding: 15px;
+}
+.materia a{
+    text-decoration: unset;
+    font-size: 19px;
+    color: black;
+}
+ </style>
+</h:head>
+<h:body>
+	<div id="geral">
+        <h:form>
+        <header>
+            <b:image name="noma" value="/imagem/nonddddddame.png"/>
+            <br/>
+            <h:commandButton action="#{videoBean.realizarVideoCadastro}" value="Cadastrar video" style="margin-left: 40px; width: 150px"/>
+            <h:commandLink action="#{loginBean.deslogar}"> <i class="fas fa-sign-in-alt"></i> </h:commandLink> 
+        </header>
+		</h:form>
+        <main>
+            <div class="painel-materias">
+                <section class="materias">
+                        <h2>Disciplinas</h2>
+                   
+							<h:form>
+                            <div class="materias-dadas" style="margin-left: 180px">
+                                <div class="materia">
+                                    <h3>Historia</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('historia')}" value="Visualizar"/>
+                                </div>
+                                    
+                                <div class="materia">
+                                    <h3>Geografia</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('geografia')}" value="Visualizar"/>
+                                </div>
+                            
+                                <div class="materia">
+                                    <h3>Matemática</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('matematica')}" value="Visualizar"/>
+                                </div>
+                            </div>
+
+                            <div class="materias-dadas" style="margin-left: 180px">
+                                <div class="materia">
+                                    <h3>Sociologia</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('sociologia')}" value="Visualizar"/>
+                                </div>
+                                
+                                <div class="materia">
+                                    <h3>Redação</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('redacao')}" value="Visualizar"/>
+                                </div>
+                
+                                <div class="materia">
+                                    <h3>Física</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('fisica')}" value="Visualizar"/>
+                                </div>
+                            </div>
+
+                            <div class="materias-dadas" style="margin-left: 180px">
+                                <div class="materia">
+                                    <h3>Cálculo</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('calculo')}" value="Visualizar"/>
+                                    </div>
+                                    
+                                <div class="materia">
+                                    <h3>Português</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('portugues')}" value="Visualizar"/>
+                                    </div>
+                    
+                                <div class="materia">
+                                    <h3>Literatura</h3>
+                                    <h:commandButton action="#{videoBean.listaVideos('literatura')}" value="Visualizar"/>
+                                </div>
+                                </div>
+                                </h:form>
+                            
+                </section>
+            </div>
+
+        </main>
+    </div>
+</h:body>
+</html>
